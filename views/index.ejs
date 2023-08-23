@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Encurtar URL</title>
+    <script>
+      function submitForm() {
+        const urlValue = document.getElementById("originalUrl").value;
+        window.location.href = `/s/${encodeURIComponent(urlValue)}`;
+      }
+    </script>
+  </head>
+  <body>
+    <div style="text-align: center">
+      <h1>URL Shortener</h1>
+      <input
+        type="url"
+        id="originalUrl"
+        placeholder="Insira a URL aqui"
+        required
+      />
+      <button onclick="submitForm()">Encurtar</button>
+    </div>
+  </body>
+</html>

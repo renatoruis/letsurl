@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>URL Encurtada</title>
+  </head>
+  <body>
+    <h1>existe:</h1>
+    <p>Clicks: <%= envs.DOMAIN %>/<%= url.shortUrlCode %></p>
+    <p>Clicks: <%= url.clicks %></p>
+    <a href="<%= envs.DOMAIN %>/<%= url.shortUrlCode %>"
+      ><%= envs.DOMAIN %>/<%= url.shortUrlCode %></a
+    >
+  </body>
+</html>
