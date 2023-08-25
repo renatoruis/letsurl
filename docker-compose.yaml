@@ -1,0 +1,11 @@
+version: "3.8"
+
+services:
+  letsurl:
+    image: docker.io/renatoruis/letsurl:latest
+    container_name: letsurl
+    ports:
+      - "3333:3000"
+    volumes:
+      - ./.env:/usr/src/app/.env
+    restart: always
